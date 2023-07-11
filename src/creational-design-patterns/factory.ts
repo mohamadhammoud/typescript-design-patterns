@@ -4,7 +4,7 @@ type Dimension = {
   depth: number;
 };
 
-interface IChair {
+export interface IChair {
   dimension: Dimension;
   getDimension(): Dimension;
 }
@@ -54,42 +54,43 @@ class BigChair extends Chair {
   }
 }
 
-enum ChairSize {
-  SMALL,
-  MEDIUM,
-  BIG,
+export enum Size {
+  SMALL = "SMALL",
+  MEDIUM = "MEDIUM",
+  BIG = "BIG",
 }
 
 export class ChairFactory {
-  static getChair(size: ChairSize): IChair {
-    if (size === ChairSize.SMALL) {
+  static getChair(size: Size): IChair {
+    if (size === Size.SMALL) {
       return new SmallChair();
     }
 
-    if (size === ChairSize.MEDIUM) {
+    if (size === Size.MEDIUM) {
       return new MediumChair();
     }
 
     return new BigChair();
   }
 }
+
 console.log(
   "-------------------------------------------------------------------"
 );
 console.log(`Factory
-    Factory is an interface that defines a creation of the final object of the subclass.
+      Factory is an interface that defines a creation of the final object of the subclass.
+  
+      This happens when you localize knowledge of specifics of initiating a particular object to the subclass,
+      so the client doesn't need to be concerened about the details for each subclass.
+  `);
 
-    This happens when you localize knowledge of specifics of initiating a particular object to the subclass,
-    so the client doesn't need to be concerened about the details for each subclass.
-`);
-
-const smallChair = ChairFactory.getChair(ChairSize.SMALL);
+const smallChair = ChairFactory.getChair(Size.SMALL);
 console.log(smallChair.getDimension());
 
-const mediumChair = ChairFactory.getChair(ChairSize.MEDIUM);
+const mediumChair = ChairFactory.getChair(Size.MEDIUM);
 console.log(mediumChair.getDimension());
 
-const bigChair = ChairFactory.getChair(ChairSize.BIG);
+const bigChair = ChairFactory.getChair(Size.BIG);
 console.log(bigChair.getDimension());
 
 console.log(
