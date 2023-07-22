@@ -8,3 +8,4 @@ import("./creational-design-patterns/abstract-factory");
 
 import("./structural-design-patterns/decorator");
 import("./structural-design-patterns/adapter");
+import("./structural-design-patterns/facade");
