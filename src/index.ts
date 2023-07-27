@@ -10,3 +10,4 @@ import("./structural-design-patterns/decorator");
 import("./structural-design-patterns/adapter");
 import("./structural-design-patterns/facade");
 import("./structural-design-patterns/bridge");
+import("./structural-design-patterns/composite");
