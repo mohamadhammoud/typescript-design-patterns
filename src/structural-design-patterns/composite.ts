@@ -68,3 +68,7 @@ new Filee("File A", globalFolder);
 new Folder("Folder B", globalFolder);
 
 globalFolder.dir();
+
+console.log(
+  "-------------------------------------------------------------------"
+);
