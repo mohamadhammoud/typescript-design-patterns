@@ -10,3 +10,4 @@ import("./structural-design-patterns/facade");
 import("./structural-design-patterns/bridge");
 import("./structural-design-patterns/composite");
 import("./structural-design-patterns/flyweight");
+import("./structural-design-patterns/proxy");
