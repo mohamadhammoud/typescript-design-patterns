@@ -11,3 +11,5 @@ import("./structural-design-patterns/bridge");
 import("./structural-design-patterns/composite");
 import("./structural-design-patterns/flyweight");
 import("./structural-design-patterns/proxy");
+
+import("./behavioral-design-patterns/command");
