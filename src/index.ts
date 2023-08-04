@@ -13,3 +13,4 @@ import("./structural-design-patterns/flyweight");
 import("./structural-design-patterns/proxy");
 
 import("./behavioral-design-patterns/command");
+import("./behavioral-design-patterns/observer");
