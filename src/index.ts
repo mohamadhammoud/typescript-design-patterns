@@ -16,3 +16,4 @@ import("./behavioral-design-patterns/command");
 import("./behavioral-design-patterns/observer");
 import("./behavioral-design-patterns/interpreter");
 import("./behavioral-design-patterns/iterator");
+import("./behavioral-design-patterns/mediator");
