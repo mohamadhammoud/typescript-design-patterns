@@ -15,3 +15,4 @@ import("./structural-design-patterns/proxy");
 import("./behavioral-design-patterns/command");
 import("./behavioral-design-patterns/observer");
 import("./behavioral-design-patterns/interpreter");
+import("./behavioral-design-patterns/iterator");
