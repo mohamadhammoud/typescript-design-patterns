@@ -55,6 +55,7 @@ class Finished implements IExampleState {
     console.log("Finished....");
   }
 }
+
 console.log(
   "-------------------------------------------------------------------"
 );
