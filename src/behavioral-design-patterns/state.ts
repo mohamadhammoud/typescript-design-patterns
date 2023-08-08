@@ -55,6 +55,15 @@ class Finished implements IExampleState {
     console.log("Finished....");
   }
 }
+console.log(
+  "-------------------------------------------------------------------"
+);
+
+console.log(`State
+          State design pattern depends on one object and change its behavior depending on specific condtion
+
+          State pattern is concerned about changing the handle of an object's method dynamically
+      `);
 
 const stateObject = new StateContext();
 console.log(stateObject.state);
@@ -67,3 +76,7 @@ stateObject.request();
 
 stateObject.setState(ExampleState.Finished);
 stateObject.request();
+
+console.log(
+  "-------------------------------------------------------------------"
+);
