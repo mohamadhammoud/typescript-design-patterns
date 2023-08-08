@@ -20,3 +20,4 @@ import("./behavioral-design-patterns/mediator");
 import("./behavioral-design-patterns/memento");
 import("./behavioral-design-patterns/state");
 import("./behavioral-design-patterns/strategy");
+import("./behavioral-design-patterns/template");
