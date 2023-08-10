@@ -22,3 +22,4 @@ import("./behavioral-design-patterns/state");
 import("./behavioral-design-patterns/strategy");
 import("./behavioral-design-patterns/template");
 import("./behavioral-design-patterns/visitor");
+import("./behavioral-design-patterns/chain-of-responsibility");
